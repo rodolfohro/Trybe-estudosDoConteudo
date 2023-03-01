@@ -10,7 +10,7 @@
 }
 
 body {
-	background-image: url('./assets/background.jpg');
+			background-image: url('./assets/background.jpg');
 	background-size: cover;
 	color: #ffffff;
 /* 	background-repeat: no-repeat; */
@@ -106,10 +106,10 @@ sobre > div {
 }
 
 #sobre > div > p {
-	position: absolute;
-/* 	bottom: 0;
-	top: 0; */
-	transform: translate( 520px, -22px);	
+	
+	display: flex;
+	justify-content: right; /* coloca o condeido para direita */
+	transform: translate(-10px, -28px);
 }
 
 #feedback > p {
@@ -167,5 +167,13 @@ margin-left: 10px;
 }
 
 a:link, a:visited {
-	color: var(--color-purple-shade);
+	color: rgb(202, 108, 202);
+	text-decoration: none;
+	transition: .3s all;
 }
+
+a:hover, :active {
+	color: var(--color-purple-shade);
+	
+}
+
