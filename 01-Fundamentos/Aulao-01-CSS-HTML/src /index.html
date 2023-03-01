@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<title>Forms T28</title>
 </head>
 <body>
@@ -57,7 +58,7 @@
 			</label>	
 
 			<label for="css">
-				<input type="checkbox" name="css" id="git">
+				<input type="checkbox" name="css" id="css">
 				CSS
 			</label>
 		</section>
@@ -73,7 +74,7 @@
 				Colaboração
 			</label>		
 
-			<label for="resiliencia">resiliencia
+			<label for="resiliencia">
 				<input type="checkbox" name="resiliencia" id="resiliencia">
 				Resiliência
 			</label>	
@@ -101,35 +102,39 @@
 		<section id="notas">
 			<label for="um">
 				1
-				<input type="radio" name="notas" id="um" value="1">
+				<input type="radio" class="box" name="notas" id="um" value="1">
 			</label>
 			<label for="dois">
 				2
-				<input type="radio" name="notas" id="dois" value="2">
+				<input type="radio" class="box" name="notas" id="dois" value="2">
 			</label>
 			<label for="tres">
 				3
-				<input type="radio" name="notas" id="tres" value="3">
+				<input type="radio" class="box" name="notas" id="tres" value="3">
 			</label>
 			<label for="quartro">
 				4
-				<input type="radio" name="notas" id="quartro" value="4">
+				<input type="radio" class="box" name="notas" id="quartro" value="4">
 			</label>
 			<label for="cinco">
 				5
-				<input type="radio" name="notas" id="cinco" value="5">
+				<input type="radio" class="box" name="notas" id="cinco" value="5">
 			</label>
 
 		</section>
 	</fieldset>
+	
 	<!-- TERMOS -->
 
-	<section>
-<p>Você concorda com os nossos termos de</p>
+	<section id="termos">
+<p>Você concorda com os nossos termos de <a href="http://www.uol.com.br"> Politica de privacidade</a> ?</p>
+
 <input type="checkbox" name="termos" id="termos">
-<button type="submit">Enviar formulário?</button>
+<button disabled type="submit">Enviar formulário?</button>
 
 </section>
 </form>
 </body>
 </html>
+
+<console class="log"></cdfonsole> 
