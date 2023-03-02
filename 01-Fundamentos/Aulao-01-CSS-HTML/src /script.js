@@ -4,6 +4,7 @@ const getBtn = document.getElementById("btnClick");
 const getName = document.querySelector("#nome");
 const getLastName = document.querySelector("#sobrenome");
 const getEmail = document.querySelector("#email");
+const getNotas = document.querySelectorAll('input[name="nota"]:checked');
 
 //FUNÇÕES
 
@@ -24,8 +25,20 @@ const getInputValues = () => {
   const getNameText = getName.value;
   const getLastNameText = getLastName.value;
   const getEmailText = getEmail.value;
+  let notaSelecionada;
+  for (const getNotasValue of getNotas) {
+    if (getNotasValue.checked) {
+      notaSelecionada = getNotasValue.value;
+    }
+  }
+  // show the output:
+  alert = notaSelecionada
+    ? `You selected ${notaSelecionada}`
+    : `You haven't selected any size`;
 
-  if (getNameText.trim("") === "") {
+  console.log(getNotas);
+
+  /*   if (getNameText.trim("") === "") {
     return alert("Preencha o campo nome"); //return para não executar o resto do código da função
   }
 
@@ -36,6 +49,13 @@ const getInputValues = () => {
   if (getEmailText.trim("") === "") {
     return alert("Preencha o campo E-mail");
   }
+ */
+  if (notaSelecionada > 0) {
+    alert("sua nota foi: " + notaSelecionada.value);
+    console.log(notaSelecionada.value);
+  } /*  else {
+    alert("Selecione uma nota");
+  } */
 };
 
 // CHAMADA DAS FUNCIONALIDADES
