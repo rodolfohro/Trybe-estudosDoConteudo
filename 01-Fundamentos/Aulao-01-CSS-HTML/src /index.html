@@ -1,140 +1,142 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Forms T28</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-<form action="">
-	<!-- DADOS PESSOAIS -->
-	<fieldset id="dados-pessoais">
-		<legend>Dados Pessoais</legend>
+    <title>Forms T28</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- DADOS PESSOAIS -->
+      <fieldset id="dados-pessoais">
+        <legend>Dados Pessoais</legend>
 
-		<label for="nome">
-			Nome
-			<input type="text" name="nome" id="nome">
-		</label>
+        <label for="nome">
+          Nome
+          <input type="text" name="nome" id="nome" />
+        </label>
 
-		<label for="sobrenome">
-			Sobrenome
-			<input type="text" name="sobrenome" id="sobrenome">
-		</label>
+        <label for="sobrenome">
+          Sobrenome
+          <input type="text" name="sobrenome" id="sobrenome" />
+        </label>
 
-		<label for="email">
-			Email
-			<input type="email" name="email" id="email">
-		</label>
+        <label for="email">
+          E-mail
+          <input type="email" name="email" id="email" />
+        </label>
 
-		<label for="data">
-			Data de Nascimento
-			<input type="date" name="data" id="data">
-		</label>
+        <label for="data">
+          Data de Nascimento
+          <input type="date" name="data" id="data" value="1987-11-25" />
+        </label>
+      </fieldset>
 
-	</fieldset>
+      <!-- HABILIDADES-->
+      <fieldset id="habilidades">
+        <legend>Habilidades</legend>
+        <p>Selecione as suas Habilidades</p>
+        <section>
+          <label for="git">
+            <input type="checkbox" name="git" id="git" />
+            Git
+          </label>
 
-	<!-- HABILIDADES-->
-	<fieldset id="habilidades">
-		<legend>Habilidades</legend>
-		<p>Selecione as suas Habilidades</p>
-		<section>
-			
-			<label for="git">
-				<input type="checkbox" name="git" id="git">
-				Git
-			</label>		
+          <label for="html">
+            <input type="checkbox" name="html" id="html" />
+            HTML
+          </label>
+          <label for="javascript">
+            <input type="checkbox" name="javascript" id="javascript" />
+            JavaScript
+          </label>
 
-			<label for="html">
-				<input type="checkbox" name="html" id="html">
-				HTML
-			</label>		
+          <label for="css">
+            <input type="checkbox" name="css" id="css" />
+            CSS
+          </label>
+        </section>
+        <section id="sociais">
+          <label for="comunicacao">
+            <input type="checkbox" name="comunicacao" id="comunicacao" />
+            Comunicação
+          </label>
 
-			<label for="javascript">
-				<input type="checkbox" name="javascript" id="javascript">
-				JavaScript
-			</label>	
+          <label for="colaboracao">
+            <input type="checkbox" name="colaboracao" id="colaboracao" />
+            Colaboração
+          </label>
 
-			<label for="css">
-				<input type="checkbox" name="css" id="css">
-				CSS
-			</label>
-		</section>
-		<section>
-			
-			<label for="comunicacao">
-				<input type="checkbox" name="comunicacao" id="comunicacao">
-				Comunicação
-			</label>		
+          <label for="resiliencia">
+            <input type="checkbox" name="resiliencia" id="resiliencia" />
+            Resiliência
+          </label>
 
-			<label for="colaboracao">
-				<input type="checkbox" name="colaboracao" id="colaboracao">
-				Colaboração
-			</label>		
+          <label for="lideranca">
+            <input type="checkbox" name="lideranca" id="lideranca" />
+            Liderança
+          </label>
+        </section>
+      </fieldset>
 
-			<label for="resiliencia">
-				<input type="checkbox" name="resiliencia" id="resiliencia">
-				Resiliência
-			</label>	
+      <!-- SOBRE -->
+      <fieldset id="sobre">
+        <legend>Sobre</legend>
+        <p>Nos conte um pouco sobre você</p>
+        <div>
+          <textarea name="sobre" id="sobre" cols="30" rows="10"></textarea>
+          <p>250</p>
+        </div>
+      </fieldset>
+      <!-- FEEDBACK -->
 
-			<label for="lideranca">
-				<input type="checkbox" name="lideranca" id="lideranca">
-				Liderança
-			</label>
-		</section>
-	</fieldset>
+      <fieldset id="feedback">
+        <p>Como você avalia esse formulário?</p>
+        <section id="notas">
+          <label for="um">
+            1
+            <input type="radio" class="box" name="nota" id="um" value="1" />
+          </label>
+          <label for="dois">
+            2
+            <input type="radio" class="box" name="nota" id="dois" value="2" />
+          </label>
+          <label for="tres">
+            3
+            <input type="radio" class="box" name="nota" id="tres" value="3" />
+          </label>
+          <label for="quartro">
+            4
+            <input
+              type="radio"
+              class="box"
+              name="nota"
+              id="quartro"
+              value="4"
+            />
+          </label>
+          <label for="cinco">
+            5
+            <input type="radio" class="box" name="nota" id="cinco" value="5" />
+          </label>
+        </section>
+      </fieldset>
 
-	<!-- SOBRE -->
-	<fieldset id="sobre">
-		<legend>Sobre</legend>
-		<p>Nos conte um pouco sobre você</p>
-		<div>
-			<textarea name="sobre" id="sobre" cols="30" rows="10"></textarea>
-			<p>250</p>
-		</div>
-	</fieldset>
-	<!-- FEEDBACK -->
+      <!-- TERMOS -->
 
-	<fieldset id="feedback">
-		<p>Como você avalia esse formulário?</p>
-		<section id="notas">
-			<label for="um">
-				1
-				<input type="radio" class="box" name="notas" id="um" value="1">
-			</label>
-			<label for="dois">
-				2
-				<input type="radio" class="box" name="notas" id="dois" value="2">
-			</label>
-			<label for="tres">
-				3
-				<input type="radio" class="box" name="notas" id="tres" value="3">
-			</label>
-			<label for="quartro">
-				4
-				<input type="radio" class="box" name="notas" id="quartro" value="4">
-			</label>
-			<label for="cinco">
-				5
-				<input type="radio" class="box" name="notas" id="cinco" value="5">
-			</label>
-
-		</section>
-	</fieldset>
-	
-	<!-- TERMOS -->
-
-	<section id="termos">
-<p>Você concorda com os nossos termos de <a href="http://www.uol.com.br"> Politica de privacidade</a> ?</p>
-
-<input type="checkbox" name="termos" id="termos">
-<button disabled type="submit">Enviar formulário?</button>
-
-</section>
-</form>
-</body>
+      <section id="termos">
+        <p>
+          Você concorda com os nossos termos de
+          <a href="https://github.com/rodolfohro"> Politica de privacidade</a> ?
+        </p>
+        <input type="checkbox" name="termos" id="termos-check" />
+        <button id="btnClick" disabled type="submit">Enviar formulário?</button>
+      </section>
+    </form>
+  </body>
 </html>
 
-<console class="log"></cdfonsole> 
+<script src="/Aulao-01-CSS-HTML/src /script.js"></script>
