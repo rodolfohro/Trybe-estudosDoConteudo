@@ -92,6 +92,11 @@ fieldset {
   flex-direction: column;
 }
 
+#habilidades > #sociais {
+  position: relative;
+  transform: translate(130px, 0px);
+}
+
 #habilidades > section > label {
   display: flex;
   align-items: center;

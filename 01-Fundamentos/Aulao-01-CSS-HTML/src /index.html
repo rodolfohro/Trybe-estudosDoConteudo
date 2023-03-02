@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Forms T28</title>
   </head>
   <body>
@@ -24,13 +25,13 @@
         </label>
 
         <label for="email">
-          Email
+          E-mail
           <input type="email" name="email" id="email" />
         </label>
 
         <label for="data">
           Data de Nascimento
-          <input type="date" name="data" id="data" value="2023-01-01" />
+          <input type="date" name="data" id="data" value="1987-11-25" />
         </label>
       </fieldset>
 
@@ -48,7 +49,6 @@
             <input type="checkbox" name="html" id="html" />
             HTML
           </label>
-
           <label for="javascript">
             <input type="checkbox" name="javascript" id="javascript" />
             JavaScript
@@ -59,7 +59,7 @@
             CSS
           </label>
         </section>
-        <section>
+        <section id="sociais">
           <label for="comunicacao">
             <input type="checkbox" name="comunicacao" id="comunicacao" />
             Comunicação
@@ -130,14 +130,13 @@
       <section id="termos">
         <p>
           Você concorda com os nossos termos de
-          <a href="http://www.uol.com.br"> Politica de privacidade</a> ?
+          <a href="https://github.com/rodolfohro"> Politica de privacidade</a> ?
         </p>
-
-        <input type="checkbox" name="termos" id="termos" />
-        <button disabled type="submit">Enviar formulário?</button>
+        <input type="checkbox" name="termos" id="termos-check" />
+        <button id="btnClick" disabled type="submit">Enviar formulário?</button>
       </section>
     </form>
   </body>
 </html>
 
-<label for="start">Start:</label>
+<script src="/Aulao-01-CSS-HTML/src /script.js"></script>
