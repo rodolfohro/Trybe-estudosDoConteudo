@@ -32,7 +32,9 @@ let animaisObjArr = [
 
 let nomeBusca = "Tigre";
 // Encontra o animal com nome igual a variável
-let animal = animaisObjArr.find((animalObj) => animalObj.nome === nomeBusca);
+let animal = animaisObjArr.find(
+  (animalEncontrado) => animalEncontrado.nome === nomeBusca
+);
 
 console.log(`${nomeBusca} se movimenta: ${animal.movimentacao}.`);
 // End-Block
