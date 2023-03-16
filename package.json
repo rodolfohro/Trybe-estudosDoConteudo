@@ -1,0 +1,19 @@
+{
+  "name": "estudosdoconteudo",
+  "version": "1.0.0",
+  "description": "Esse repositório foi feito para estudar o conteúdo  e deixar salvo os assuntos do módulo 2 (front-end) em diante",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodolfohro/estudosDoConteudo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodolfohro/estudosDoConteudo/issues"
+  },
+  "homepage": "https://github.com/rodolfohro/estudosDoConteudo#readme"
+}
